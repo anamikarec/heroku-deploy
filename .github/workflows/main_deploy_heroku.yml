@@ -1,4 +1,4 @@
-- name: Deploy to heroku master branch
+name: Deploy to heroku master branch
 
 on:
   push:
