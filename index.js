@@ -39,13 +39,13 @@ app.get('/posts',(req,res) => {
 
 
 app.get('/read', (req, res)=>{
-    Post.find((err, data)=>{
-        if(err) 
-         return res.status(500).send({"message": "Something went wrong!!"});
-         else
+    // Post.find((err, data)=>{
+        // if(err) 
+        //  return res.status(500).send({"message": "Something went wrong!!"});
+        //  else
          return res.status(200).send({"msg" : "can see your posts"});
 
-    })
+    // })
 })
 app.listen(port,()=>{
     console.log(`listening on port ${port}`)
