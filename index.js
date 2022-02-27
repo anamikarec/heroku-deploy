@@ -33,7 +33,7 @@ app.get('/posts',(req,res) => {
 
     post.save((err,data)=>{
         if(err) console.log(err);
-        res.status(200).send(data);
+        res.status(200).send({"msg" : "hello post"});
     })
 })
 
@@ -43,7 +43,7 @@ app.get('/read', (req, res)=>{
         if(err) 
          return res.status(500).send({"message": "Something went wrong!!"});
          else
-         return res.status(200).send(data);
+         return res.status(200).send({"msg" : "can see your posts"});
 
     })
 })
